@@ -17,10 +17,10 @@
     <form action="LoginUserServlet" method="POST">
         <h3>Login as User</h3>
 
-        <label for="emailAddress">Email address</label>
+        <label>Email address</label>
         <input type="text" placeholder="Enter your email"  name="emailAddress">
 
-        <label for="password">Password</label>
+        <label>Password</label>
         <input type="password" placeholder="Enter your password"  name="password">
 
         <button type="submit">Log In</button>

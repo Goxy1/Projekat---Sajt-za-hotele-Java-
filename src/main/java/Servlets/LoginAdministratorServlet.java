@@ -11,8 +11,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-@WebServlet(name = "LoginManagerServlet", value = "/LoginManagerServlet")
-public class LoginManagerServlet extends HttpServlet {
+@WebServlet(name = "LoginAdministratorServlet", value = "/LoginAdministratorServlet")
+public class LoginAdministratorServlet extends HttpServlet {
 
     Connection connection = ConnectionDataBase.connectToDataBase();
     @Override
@@ -28,8 +28,7 @@ public class LoginManagerServlet extends HttpServlet {
         boolean errorLogin = true;
         HttpSession session = request.getSession();
 
-        String query = "select * from menadzer where emailManager = ? and passwordManager = ?";
-
+        String query = "select * from admin where emailAdmin = ? and passwordAdmin = ?";
         try{
             PreparedStatement statement = connection.prepareStatement(query);
             statement.setString(1, emailAddressField);
@@ -38,15 +37,15 @@ public class LoginManagerServlet extends HttpServlet {
             ResultSet resultSet = statement.executeQuery();
 
             if(resultSet.next()) {
-                String managerID = resultSet.getString("ID");
-                request.getSession().setAttribute("LoggedinManager", managerID);
+                String adminID = resultSet.getString("ID");
+                request.getSession().setAttribute("LoggedinAdmin", adminID);
 
                 // Set the cookie
-                Cookie cookie = new Cookie("loggedInManager", managerID);
+                Cookie cookie = new Cookie("loggedInAdmin", adminID);
                 response.addCookie(cookie);
 
                 errorLogin = false;
-                response.sendRedirect("ManagerPage.jsp");
+                response.sendRedirect("AdminPage.jsp");
             }
         }
         catch (SQLException e) {
@@ -56,7 +55,7 @@ public class LoginManagerServlet extends HttpServlet {
         if(errorLogin)
         {
             request.setAttribute("errorLogin", true);
-            request.getRequestDispatcher("LogInManagerPage.jsp").forward(request,response);
+            request.getRequestDispatcher("LogInAdminPage.jsp").forward(request,response);
         }
     }
 }

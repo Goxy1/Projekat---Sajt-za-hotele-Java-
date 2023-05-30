@@ -15,16 +15,16 @@
     <body>
         <div class="blob"></div>
         <div class="wrapper">
-            <form action="">
+            <form action="LoginAdministratorServlet" method="POST">
                 <h2>Login as Administrator</h2>
                 <div class="input-box">
-                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                    <input type="email" required>
+                    <span class="icon"><ion-icon name="mail-outline"/></span>
+                    <input type="text" name="emailAddress" required>
                     <label>Email</label>
                 </div>
                 <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                    <input type="password" required>
+                    <span class="icon"><ion-icon name="lock-closed-outline"/></span>
+                    <input type="password" name="password" required>
                     <label>Password</label>
                 </div>
                 <button type="Submit">Login</button>

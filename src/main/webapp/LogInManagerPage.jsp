@@ -12,24 +12,11 @@
         <title>Log in manager</title>
     </head>
     <body>
-    <%
-        String loggedInManager = "";
-        String email = (String) request.getAttribute("enteredEmail");
-        String password = (String) request.getAttribute("enteredPassword");
-        boolean error = false;
-
-        try {
-            error = (boolean) request.getAttribute("errorLogin");
-        } catch (Exception ignored) {}
-
-        request.getSession().setAttribute("loggedinManager", loggedInManager);
-
-    %>
 
     <div class="container">
     <div class="screen">
         <div class="screen__content">
-            <form class="login" action="LoginManagerServlet" method="GET">
+            <form class="login" action="LoginManagerServlet" method="POST">
                 <div class="login__field">
                     <i class="login__icon fas fa-user"></i>
                     <input type="text" class="login__input" placeholder="Enter your email"  name="emailAddress">
