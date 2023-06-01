@@ -49,7 +49,7 @@ public class LoginUserServlet extends HttpServlet {
                 response.addCookie(cookie);
 
                 errorLogin = false;
-                response.sendRedirect("UserPage.jsp");
+                response.sendRedirect("UserPages/ExploreHotelsUserPage.jsp");
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
