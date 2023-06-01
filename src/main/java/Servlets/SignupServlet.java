@@ -72,7 +72,7 @@ public class SignupServlet extends HttpServlet {
 //                    int ID = resultSet.getInt("ID");
 //                    request.getSession().setAttribute("LoggedinUser", ID);
 //                }
-                response.sendRedirect("UserPage.jsp");
+                response.sendRedirect("ExploreHotelsUserPage.jsp");
             }
         }catch (SQLException e) {
             throw new RuntimeException(e);
