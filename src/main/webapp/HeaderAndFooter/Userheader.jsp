@@ -17,8 +17,7 @@
   <br>
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-      <a class="navbar-brand" href="../UserPages/HowToBookOnlinePage.jsp">How to use</a>
+      <a class="navbar-brand" href="../UserPages/AboutUs.jsp">About us</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,7 +33,7 @@
             <a class="nav-link" href="../UserPages/UserReservations.jsp">My reservations</a>
           </li>
           <li>
-            <a class="nav-link" href="LogoutUserServlet">Logout</a>
+            <a class="nav-link" href="../LogoutUserServlet">Logout</a>
           </li>
         </ul>
         <form class="d-flex">
