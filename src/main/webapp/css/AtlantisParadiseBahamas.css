@@ -1,0 +1,29 @@
+.AtlantisParadiseForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.AtlantisParadiseLabel {
+    margin-bottom: 5px;
+}
+
+.AtlantisParadiseInput {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.AtlantisParadiseInput:last-child {
+    margin-bottom: 20px;
+}
+
+.AtlantisParadiseButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.AtlantisParadiseButton:hover {
+    background-color: #0056b3;
+}
