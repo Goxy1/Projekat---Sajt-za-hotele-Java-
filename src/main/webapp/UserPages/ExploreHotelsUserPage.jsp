@@ -28,9 +28,6 @@
         }
     %>
 
-    <!--Ovde je ideja da stavimo 7 hotela i da napravimo nekako da izgleda clean i kad se klikne na hotel onda se otvori posebna stranica
-    koja nam opise hotel i onda nam tu izbaci podatke koje nam trebaju da bi se rezervisalo(tu stavljamo i onaj date i itd) BILO BI DO JAJA DA STAVIMO SLIDESHOW NA OBE STRANE
-    OVDE KAD SAMO GLEDAS HOTELE i na drugoj.Razmotriti tu odluku-->
 </head>
 <body>
     <% if (loggedInUser != null) { %>
@@ -47,7 +44,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Atlantis Paradise Bahamas Hotel</h5>
                         <p class="card-text">This iconic tower’s lobby features The Dig and Ruins Lagoon.</p>
-                        <a href="#" class="btn btn-primary">Explore this hotel!</a>
+                        <a href="../HotelsPages/AtlantisParadiseBahamasHotelPage.jsp" class="btn btn-primary">Explore this hotel!</a>
                     </div>
                 </div>
             </div>
