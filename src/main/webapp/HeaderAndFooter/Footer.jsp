@@ -22,10 +22,10 @@
       <div class="footer-col">
         <h4>Follow us</h4>
         <div class="social-links">
-          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-fade"></i></a>
-          <a href="https://twitter.com/"><i class="fa-brands fa-twitter fa-fade"></i></a>
-          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-fade"></i></a>
-          <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in fa-fade"></i></a>
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
       </div>
     </div>
