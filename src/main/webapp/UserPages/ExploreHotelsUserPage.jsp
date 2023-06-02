@@ -56,7 +56,7 @@
                     <img src="../img/BurjAlArabJumeirahHotel.jpg" class="card-img-top" alt="BurjAlArabJumeirahHotel">
                     <div class="card-body">
                         <h5 class="card-title">Burj Al Arab Jumeirah Hotel</h5>
-                        <p class="card-text">Situated on its own island, Burj Al Arab Jumeirah features suites overlooking the sea, 8 signature restaurants.</p>
+                        <p class="card-text">Situated on its own island, Burj Al Arab Jumeirah features suites overlooking the sea.</p>
                         <a href="#" class="btn btn-primary">Explore this hotel!</a>
                     </div>
                 </div>
