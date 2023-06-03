@@ -29,11 +29,10 @@
     %>
 
 </head>
+
 <body>
     <% if (loggedInUser != null) { %>
-    <script>
-     alert("Congrats! You have logged in successfully!");
-    </script>
+
    <jsp:include page="../HeaderAndFooter/Userheader.jsp"/>
 
     <div class="container">
@@ -54,7 +53,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Burj Al Arab Jumeirah Hotel</h5>
                         <p class="card-text">Situated on its own island, Burj Al Arab Jumeirah features suites overlooking the sea.</p>
-                        <a href="#" class="btn btn-primary">Explore this hotel!</a>
+                        <a href="../HotelsPages/BurjAlArabJumeirahHotelPage.jsp" class="btn btn-primary">Explore this hotel!</a>
                     </div>
                 </div>
             </div>
@@ -64,7 +63,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Emirates Palace Mandarin Orienta Abu Dhabi Hotel</h5>
                         <p class="card-text">Located on the shores of the Arabian Gulf.</p>
-                        <a href="#" class="btn btn-primary">Explore this hotel!</a>
+                        <a href="../HotelsPages/EmiratesPalaceMandarinOrientaAbuDhabiHotelPage.jsp" class="btn btn-primary">Explore this hotel!</a>
                     </div>
                 </div>
             </div>
@@ -78,7 +77,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Titanic Mardan Palace Turkey Hotel</h5>
                         <p class="card-text">Located on a private beach, Titanic Mardan Palace - All Inclusive is in Lara.</p>
-                        <a href="#" class="btn btn-primary">Explore this hotel!</a>
+                        <a href="../HotelsPages/TitanicMardanPalaceTurkeyHotelPage.jsp" class="btn btn-primary">Explore this hotel!</a>
                     </div>
                 </div>
             </div>
@@ -94,10 +93,10 @@
             </div>
             <div class="col-4 custom-col-3" style="margin-top: 3cm;">
                 <div class="card custom-col-3" style="width: 18rem;">
-                    <img src="../img/ThePlazaNewYorkHotel.jpg" class="card-img-top" alt="ThePlazaNewYorkHotel">
+                    <img src="../img/ThePlazaNewYorkHotell.jpg" class="card-img-top" alt="ThePlazaNewYorkHotel">
                     <div class="card-body">
                         <h5 class="card-title">The Plaza New York Hotel</h5>
-                        <p class="card-text">The Plaza Hotel is located in Manhattan, a neighborhood in New York.</p>
+                        <p class="card-text">The Plaza Hotel is located in Manhattan, a neighborhood in New York.Services are all-inclusive.</p>
                         <a href="#" class="btn btn-primary">Explore this hotel!</a>
                     </div>
                 </div>
