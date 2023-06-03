@@ -65,13 +65,6 @@ public class SignupServlet extends HttpServlet {
                 statement1.setString(6,passwordField);
                 statement1.executeUpdate();
 
-//                resultSet = statement1.getGeneratedKeys();
-//
-//                if(resultSet.next())
-//                {
-//                    int ID = resultSet.getInt("ID");
-//                    request.getSession().setAttribute("LoggedinUser", ID);
-//                }
                 response.sendRedirect("ExploreHotelsUserPage.jsp");
             }
         }catch (SQLException e) {
