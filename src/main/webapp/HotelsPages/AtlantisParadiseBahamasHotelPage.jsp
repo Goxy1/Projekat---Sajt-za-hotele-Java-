@@ -59,6 +59,7 @@
 
 
   <div class="container">
+    <h2 class="h2">Atlantis Paradise Bahamas Hotel</h2>
     <p>This iconic tower’s lobby features The Dig and Ruins Lagoon, a large open-air marine habitat. Located in the Atlantis Paradise Resort and Casino, it offers colorful rooms with a flat-screen TV.<br><br>
 
       A French balcony with views of the harbor, ocean, or gardens is included in every contemporary Royal Towers Atlantis room. An iPod docking station and minibar are provided. Room service and Wi-Fi are available 24 hours a day.<br><br>
@@ -69,12 +70,15 @@
 
       The 10,000-square-foot gym offers yoga and cardio classes. Six tennis courts are available, along with racquet rentals and tennis lessons.<br><br>
 
-      Couples particularly like the location — they rated it 8.9 for a two-person trip.</p>
+      Couples particularly like the location — they rated it 8.9 for a two-person trip.<br><br>
+
+
+       The price of the 1 night is 800EURO - The price includes All inclusive, one of the best swimming pools in the world, a room with a beautiful view of the sea and all kinds of activities.</p>
   </div>
 
   <div class="container">
 
-        <form class="AtlantisParadiseForm" action="" method="POST">
+        <form class="AtlantisParadiseForm" action="../MakeReservationUserServlet" method="POST">
           <label class="AtlantisParadiseLabel">FirstName:</label>
           <input class="AtlantisParadiseInput" type="text" id="firstName" name="firstName" required>
 
@@ -88,10 +92,16 @@
           <input class="AtlantisParadiseInput" type="email" id="email" name="email" required>
 
           <label class="check-lbl">Check-in date</label>
-          <input type="date" name="checkInDate" class="form-control" placeholder="Check-in date">
+          <input type="date"  name="checkInDate" class="form-control" placeholder="Check-in date" required>
 
           <label class="check-lbl">Check-out date</label>
-          <input type="date" class="form-control" name="checkOutDate" placeholder="Check-out date">
+          <input type="date"  class="form-control" name="checkOutDate" placeholder="Check-out date" required>
+
+          <label class="AtlantisParadiseLabel">What type of room would you like?We offer single and double rooms.</label>
+          <input class="AtlantisParadiseInput" type="text" id="typeOfRoom" name="typeOfRoom" required>
+
+          <label class="AtlantisParadiseLabel">Enter the name of the hotel to confirm that you are not a bot.</label>
+          <input class="AtlantisParadiseInput" type="text" id="hotelName" name="hotelName" required>
 
           <button class="AtlantisParadiseButton" type="submit">Reserve!</button>
         </form>
@@ -102,7 +112,3 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-
-
