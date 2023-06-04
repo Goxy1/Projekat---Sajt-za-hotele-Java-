@@ -65,7 +65,7 @@ public class SignupServlet extends HttpServlet {
                 statement1.setString(6,passwordField);
                 statement1.executeUpdate();
 
-                response.sendRedirect("ExploreHotelsUserPage.jsp");
+                response.sendRedirect("UserPages/ExploreHotelsUserPage.jsp");
             }
         }catch (SQLException e) {
             throw new RuntimeException(e);
