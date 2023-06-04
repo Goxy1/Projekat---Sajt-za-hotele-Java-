@@ -7,8 +7,11 @@
         <entry key="file://$PROJECT_DIR$/src/main/webapp/ContactUs.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/ExploreHotelsUserPage.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/LogInUserPage.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/SignUpPage.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/UserPages/AboutUs.jsp" value="file://$PROJECT_DIR$/src/main/webapp/UserPages" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/UserPages/ContactUs.jsp" value="file://$PROJECT_DIR$/src/main/webapp/UserPages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/UserPages/ShowUserReservations.jsp" value="file://$PROJECT_DIR$/src/main/webapp/UserPages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/UserPages/UserReservations.jsp" value="file://$PROJECT_DIR$/src/main/webapp/UserPages" />
       </map>
     </option>
   </component>
