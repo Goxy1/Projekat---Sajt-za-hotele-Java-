@@ -29,7 +29,7 @@
 
     <div class="faq-item">
         <div class="question">What payment methods are accepted?</div>
-        <div class="answer">We accept various payment methods, including major credit cards, debit cards, and online payment platforms. During the reservation process, you will be prompted to enter your payment details securely. Rest assured that your information will be encrypted and protected.</div>
+        <div class="answer">For the demo version of this site,the payment is made in hotel reservations.</div>
     </div>
 
     <div class="faq-item">
