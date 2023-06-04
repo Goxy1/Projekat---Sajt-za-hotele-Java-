@@ -4,6 +4,9 @@
   Date: 5/30/2023
   Time: 11:55 AM
   To change this template use File | Settings | File Templates.
+  Za rezervaciju treba napraviti input polje gde se pise email pa se sa emailom hvataju sve
+  rezervacije koje su pod tim mejlom.
+
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
@@ -26,6 +29,7 @@
                 }
             }
         }
+
     %>
 
 </head>
@@ -87,7 +91,7 @@
                     <div class="card-body">
                         <h5 class="card-title">The Palms Las Vegas Hotel</h5>
                         <p class="card-text">Palms Place puts you just a 5-minute drive from The Linq and The Cosmopolitan Casino.</p>
-                        <a href="#" class="btn btn-primary">Explore this hotel!</a>
+                        <a href="../HotelsPages/ThePalmsLasVegasHotelPage.jsp" class="btn btn-primary">Explore this hotel!</a>
                     </div>
                 </div>
             </div>
@@ -97,7 +101,7 @@
                     <div class="card-body">
                         <h5 class="card-title">The Plaza New York Hotel</h5>
                         <p class="card-text">The Plaza Hotel is located in Manhattan, a neighborhood in New York.Services are all-inclusive.</p>
-                        <a href="#" class="btn btn-primary">Explore this hotel!</a>
+                        <a href="../HotelsPages/ThePlazaNewYorkHotelPage.jsp" class="btn btn-primary">Explore this hotel!</a>
                     </div>
                 </div>
             </div>
@@ -112,7 +116,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Westin Excelsior Rome Hotel</h5>
                         <p class="card-text">The Westin Excelsior, Rome is in fashionable Via Veneto.</p>
-                        <a href="#" class="btn btn-primary">Explore this hotel!</a>
+                        <a href="../HotelsPages/WestinExcelsiorRomeHotelPage.jsp" class="btn btn-primary">Explore this hotel!</a>
                     </div>
                 </div>
             </div>
@@ -122,7 +126,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Jade Mountain Resort St Lucia Hotel</h5>
                         <p class="card-text">At Jade Mountain Resort, you'll have a lot of fun.</p>
-                        <a href="#" class="btn btn-primary">Explore this hotel!</a>
+                        <a href="../HotelsPages/JadeMountainResortStLuciaHotelPage.jsp" class="btn btn-primary">Explore this hotel!</a>
                     </div>
                 </div>
             </div>
@@ -130,9 +134,9 @@
                 <div class="card custom-col-3" style="width: 18rem;">
                     <img src="../img/TheRoyalPenthouseHotelPresidentWilson.jpg" class="card-img-top" alt="TheRoyalPenthouse–HotelPresidentWilson–">
                     <div class="card-body">
-                        <h5 class="card-title">The Royal Penthouse – Hotel President Wilson –</h5>
-                        <p class="card-text">At Jade Mountain Resort, you'll have a lot of fun.</p>
-                        <a href="#" class="btn btn-primary">Explore this hotel!</a>
+                        <h5 class="card-title">Hotel President Wilson,a Luxury Collection Hotel</h5>
+                        <p class="card-text">This elegant 5-star hotel is located on Geneva’s waterfront promenade.</p>
+                        <a href="../HotelsPages/TheRoyalPenthouseHotelPresidentWilsonPage.jsp" class="btn btn-primary">Explore this hotel!</a>
                     </div>
                 </div>
             </div>
