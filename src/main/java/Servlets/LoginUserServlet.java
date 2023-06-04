@@ -44,9 +44,16 @@ public class LoginUserServlet extends HttpServlet {
                 String userID = resultSet.getString("ID");
                 request.getSession().setAttribute("LoggedinUser", userID);
 
-                // Set the cookie
+                String emailUser = resultSet.getString("emailAddressUser");
+                request.getSession().setAttribute("userEmail",emailUser);
+
+                // Set the cookie for userID
                 Cookie cookie = new Cookie("loggedInUser", userID);
                 response.addCookie(cookie);
+
+                //Set the cookie for email
+                Cookie cookieEmail = new Cookie("UserEmail", emailUser);
+                response.addCookie(cookieEmail);
 
                 errorLogin = false;
                 response.sendRedirect("UserPages/ExploreHotelsUserPage.jsp");
