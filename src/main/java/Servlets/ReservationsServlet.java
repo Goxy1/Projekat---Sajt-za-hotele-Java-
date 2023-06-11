@@ -29,9 +29,9 @@ public class ReservationsServlet extends HttpServlet {
             List<Reservation> reservations = getReservations(email);
             request.setAttribute("reservations", reservations);
 
-            // Postavljanje vrednosti emaila kao cookie
+            // Setting value emaila as cookie
             Cookie emailCookie = new Cookie("emailCookie", email);
-            emailCookie.setMaxAge(86400); // Postavljanje trajanja cookie-a na 24 sata (86400 sekundi)
+            emailCookie.setMaxAge(86400); // Setting time for a cookie-a 24h (86400 sec)
             response.addCookie(emailCookie);
 
             RequestDispatcher dispatcher = request.getRequestDispatcher("/UserPages/ShowUserReservations.jsp");
