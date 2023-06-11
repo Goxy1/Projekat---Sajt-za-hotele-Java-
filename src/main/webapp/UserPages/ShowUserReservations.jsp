@@ -11,6 +11,7 @@
 <html>
 <head>
     <title>User Reservations!</title>
+    <link href="../css/ShowUserReservations.css" rel="stylesheet">
 </head>
 <body>
 <h1>Your reservations</h1>
@@ -42,7 +43,12 @@
         <td><%= reservation.getHotelName() %></td>
     </tr>
     <% } %>
-    <input type="Submit" value="Obrisi rezervaciju">
-</table>
+</table><br><br>
+<form action="CancelReservationServlet" method="POST">
+    <label>Reservation ID:</label>
+    <input type="text" name="ReservationID" placeholder="Enter your reservation ID" required><br><br/>
+    <input type="Submit" value="Cancel reservation">
+</form>
+
 </body>
 </html>
