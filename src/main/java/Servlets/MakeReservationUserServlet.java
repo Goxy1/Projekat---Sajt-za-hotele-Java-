@@ -23,16 +23,19 @@ public class MakeReservationUserServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+
+
+
         String firstName = request.getParameter("firstName");
         String surname = request.getParameter("surname");
         String dateOfBirth = request.getParameter("dateOfBirth");
-        String email = request.getParameter("email");
+        String email = getEmailFromCookie(request);
         String checkInDate = request.getParameter("checkInDate");
         String checkOutDate = request.getParameter("checkOutDate");
         String typeOfRoom = request.getParameter("typeOfRoom");
         String hotelName = request.getParameter("hotelName");
 
-        boolean success = saveReservation(firstName, surname, dateOfBirth, email, checkInDate, checkOutDate, typeOfRoom, hotelName);
+        boolean success = saveReservation(firstName, surname, dateOfBirth,email, checkInDate, checkOutDate, typeOfRoom, hotelName);
 
         if (success) {
 
@@ -84,5 +87,16 @@ public class MakeReservationUserServlet extends HttpServlet {
         }
 
         return success;
+    }
+    private String getEmailFromCookie(HttpServletRequest request) {
+        Cookie[] cookies = request.getCookies();
+        if (cookies != null) {
+            for (Cookie cookie : cookies) {
+                if (cookie.getName().equals("emailCookie")) {
+                    return cookie.getValue();
+                }
+            }
+        }
+        return null;
     }
 }
