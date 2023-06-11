@@ -38,6 +38,10 @@ public class SignupServlet extends HttpServlet {
             statement.setString(1,emailField);
             ResultSet resultSet = statement.executeQuery();
 
+            //Set the cookie for email
+            Cookie cookieEmail = new Cookie("UserEmail", emailField);
+            response.addCookie(cookieEmail);
+
             if(resultSet.next())
             {
                 errorEmailAddress = true;
@@ -65,7 +69,9 @@ public class SignupServlet extends HttpServlet {
                 statement1.setString(6,passwordField);
                 statement1.executeUpdate();
 
-                response.sendRedirect("UserPages/ExploreHotelsUserPage.jsp");
+
+
+                response.sendRedirect("/UserPages/ExploreHotelsUserPage.jsp");
             }
         }catch (SQLException e) {
             throw new RuntimeException(e);
