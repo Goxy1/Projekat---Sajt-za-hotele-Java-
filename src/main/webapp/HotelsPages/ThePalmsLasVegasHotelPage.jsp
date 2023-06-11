@@ -90,9 +90,6 @@
     <label class="AtlantisParadiseLabel">Date of birth:</label>
     <input class="AtlantisParadiseInput" type="date" id="dateOfBirth" name="dateOfBirth" required>
 
-    <label class="AtlantisParadiseLabel">E-mail:</label>
-    <input class="AtlantisParadiseInput" type="email" id="email" name="email" required>
-
     <label class="check-lbl">Check-in date</label>
     <input type="date"  name="checkInDate" class="form-control" placeholder="Check-in date" required>
 
