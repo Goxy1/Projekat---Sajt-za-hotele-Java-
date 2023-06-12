@@ -39,7 +39,7 @@
 
     <div class="faq-item">
         <div class="question">How do I use points?</div>
-        <div class="answer">Once you get reservation on one of our hotels,your account will get 10points.Once you get a specific number of points you can get reservation at lower price.</div>
+        <div class="answer">Once you get reservation on one of our hotels,your account will get 10points.Once you get a specific number of points(50 points) you can get reservation at lower price.</div>
     </div>
 </div>
 <jsp:include page="../HeaderAndFooter/Footer.jsp"/>

@@ -12,7 +12,7 @@
 </head>
 <body>
     <script>
-        alert("You have successfully reserved a room. Payment is made when you arrive at the reception.");
+        alert("You have successfully reserved a room and you have earned 10 points!Payment is made once you arrive at the reception.");
         window.location.href="../UserPages/ExploreHotelsUserPage.jsp";
     </script>
 </body>

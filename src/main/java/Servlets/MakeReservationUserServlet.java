@@ -44,9 +44,7 @@ public class MakeReservationUserServlet extends HttpServlet {
                 updatePoints(email, userPoints + 10);
                 response.sendRedirect("../UserPages/SuccessReservation.jsp");
             }
-       }else{
-            response.sendRedirect("../UserPages/ErrorPage.jsp");
-        }
+       }
     }
     private boolean saveReservation(String firstName, String surname, String dateOfBirth, String email, String checkInDate, String checkOutDate, String typeOfRoom, String hotelName) {
         boolean success = false;
