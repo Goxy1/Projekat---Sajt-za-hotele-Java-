@@ -74,6 +74,7 @@
     Couples particularly like the location — they rated it 9.5 for a two-person trip.<br><br>
 
     The price of the 1 night is 1400EURO - The price includes All inclusive, one of the best swimming pools in the world, a room with a beautiful view of the sea and all kinds of activities.</p>
+    With our loyalty discount the price of the 1 night is 1300EURO!!!
 </div>
 
 <div class="container">

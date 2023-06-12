@@ -69,6 +69,7 @@
 
 
     The price of the 1 night is 2000EURO - The price includes All inclusive, one of the best swimming pools in the world, a room with a beautiful view of the sea and all kinds of activities.</p>
+    With our loyalty discount the price of the 1 night is 1900EURO!!!
 </div>
 
 <div class="container">
