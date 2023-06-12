@@ -74,6 +74,7 @@
 
 
        The price of the 1 night is 800EURO - The price includes All inclusive, one of the best swimming pools in the world, a room with a beautiful view of the sea and all kinds of activities.</p>
+       With our loyalty discount the price of the 1 night is 700EURO!!!
   </div>
 
   <div class="container">
@@ -88,9 +89,6 @@
           <label class="AtlantisParadiseLabel">Date of birth:</label>
           <input class="AtlantisParadiseInput" type="date" id="dateOfBirth" name="dateOfBirth" required>
 
-<%--          <label class="AtlantisParadiseLabel">E-mail:</label>--%>
-<%--          <input class="AtlantisParadiseInput" type="email" id="email" name="email" required>--%>
-
           <label class="check-lbl">Check-in date</label>
           <input type="date"  name="checkInDate" class="form-control" placeholder="Check-in date" required>
 
@@ -103,7 +101,7 @@
           <label class="AtlantisParadiseLabel">Enter the name of the hotel to confirm that you are not a bot.</label>
           <input class="AtlantisParadiseInput" type="text" id="hotelName" name="hotelName" required>
 
-          <button class="AtlantisParadiseButton" type="submit">Reserve!</button>
+          <button class="AtlantisParadiseButton" type="submit">Reserve!</button><br>
         </form>
   </div>
 
