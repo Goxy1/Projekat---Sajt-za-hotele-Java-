@@ -157,9 +157,14 @@
     <input class="AtlantisParadiseInput" type="text" name="RemoveNumberOfRooms">
     <button type="submit" class="AtlantisParadiseButton">Remove rooms!</button>
   </form>
-  <form action="../AtlantisAddTypeOfRoomServlet" method="POST" class="AtlantisParadiseForm">
-    <label class="AtlantisParadiseLabel" >What type of room do you want do add?</label>
+  <form action="../AtlantisAddTypeOfRoomFirstSlotServlet" method="POST" class="AtlantisParadiseForm">
+    <label class="AtlantisParadiseLabel" >What type of room do you want do add?(1st slot)</label>
     <input class="AtlantisParadiseInput" type="text" name="AddTypeOfRoom">
+    <button type="submit" class="AtlantisParadiseButton">Add new type of the room</button>
+  </form>
+  <form action="../AtlantisAddTypeOfRoomServlet" method="POST" class="AtlantisParadiseForm">
+    <label class="AtlantisParadiseLabel" >What type of room do you want do add?(2nd slot)</label>
+    <input class="AtlantisParadiseInput" type="text" name="AddTypeOfRoom2">
     <button type="submit" class="AtlantisParadiseButton">Add new type of the room</button>
   </form>
 </div>
