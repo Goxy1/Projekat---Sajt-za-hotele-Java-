@@ -21,7 +21,7 @@ public class AtlantisAddTypeOfRoomServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String typeOfRoom = request.getParameter("AddTypeOfRoom");
+        String typeOfRoom = request.getParameter("AddTypeOfRoom2");
 
         try{
             insertTypeOfRoomIntoDatabase(typeOfRoom);
