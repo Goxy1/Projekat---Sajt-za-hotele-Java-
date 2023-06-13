@@ -41,12 +41,18 @@ public class LoginManagerServlet extends HttpServlet {
                 String managerID = resultSet.getString("ID");
                 request.getSession().setAttribute("LoggedinManager", managerID);
 
+                String emailManager = resultSet.getString("emailManager");
+                request.getSession().setAttribute("managerEmail",emailManager);
+
                 // Set the cookie
                 Cookie cookie = new Cookie("loggedInManager", managerID);
                 response.addCookie(cookie);
 
+                Cookie cookieEmail = new Cookie("managerEmail", emailManager);
+                response.addCookie(cookieEmail);
+
                 errorLogin = false;
-                response.sendRedirect("ManagerPage.jsp");
+                response.sendRedirect("../ManagerPages/AtlantisParadiseBahamasHotelManagerPage.jsp");
             }
         }
         catch (SQLException e) {
