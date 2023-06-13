@@ -29,7 +29,7 @@
             <a class="nav-link" href="../ManagerPages/ManagerRulesPage.jsp">Rules</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Reservations</a>
+            <a class="nav-link" href="../ManagerPages/ShowReservationForAtlantaHotel.jsp">Reservations</a>
           </li>
         </ul>
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
