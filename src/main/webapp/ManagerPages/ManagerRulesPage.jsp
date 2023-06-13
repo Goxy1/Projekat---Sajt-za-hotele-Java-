@@ -32,7 +32,7 @@
   </ul>
 
   <video controls>
-    <source src="video.mp4" type="video/mp4">
+    <source src="../video/videoMenadzer.mp4" type="video/mp4">
     Your browser does not support video playback.
   </video>
 </div>
