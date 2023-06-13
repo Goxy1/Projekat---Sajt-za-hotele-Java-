@@ -29,6 +29,15 @@ public class LogoutUserServlet extends HttpServlet {
                 }
             }
         }
+        if(cookies != null){
+            for(Cookie cookie: cookies){
+                if(cookie.getName().equals("UserEmail")){
+                    cookie.setMaxAge(0);
+                    response.addCookie(cookie);
+                    break;
+                }
+            }
+        }
         // Redirect to the login page
         response.sendRedirect("index.jsp");
     }
