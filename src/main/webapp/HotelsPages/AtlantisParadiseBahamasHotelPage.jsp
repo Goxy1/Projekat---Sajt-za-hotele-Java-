@@ -95,7 +95,7 @@
           <label class="check-lbl">Check-out date</label>
           <input type="date"  class="form-control" name="checkOutDate" placeholder="Check-out date" required>
 
-          <label class="AtlantisParadiseLabel">What type of room would you like?We offer single and double rooms.</label>
+          <label class="AtlantisParadiseLabel">What type of room would you like?We offer single room and double rooms.</label>
           <input class="AtlantisParadiseInput" type="text" id="typeOfRoom" name="typeOfRoom" required>
 
           <label class="AtlantisParadiseLabel">Enter the name of the hotel to confirm that you are not a bot.</label>
