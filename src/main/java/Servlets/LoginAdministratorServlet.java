@@ -45,7 +45,7 @@ public class LoginAdministratorServlet extends HttpServlet {
                 response.addCookie(cookie);
 
                 errorLogin = false;
-                response.sendRedirect("AdminPage.jsp");
+                response.sendRedirect("../AdminPages/AdminPage.jsp");
             }
         }
         catch (SQLException e) {
