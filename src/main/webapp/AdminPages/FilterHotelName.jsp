@@ -15,6 +15,7 @@
     <title>Filter Hotel name</title>
   <jsp:include page="../HeaderAndFooter/AdminHeader.jsp"/>
   <link href="../css/TableWithReservations.css" rel="stylesheet">
+  <link href="../css/InputIDForAtlantaHotelReservation.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">

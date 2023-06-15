@@ -13,7 +13,7 @@
 <head>
     <title>Reservations!</title>
     <link href="../css/TableWithReservations.css" rel="stylesheet">
-    <link href="../css/InputTypes.css" rel="stylesheet">
+    <link href="../css/InputIDForAtlantaHotelReservation.css" rel="stylesheet">
 </head>
 <body>
 <jsp:include page="../HeaderAndFooter/AdminHeader.jsp"/>
