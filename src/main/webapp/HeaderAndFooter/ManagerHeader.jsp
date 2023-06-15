@@ -8,7 +8,7 @@
       <div class = "col-md-10">
         <header>
           <div class = "page-header">
-            <h1><a href = "../index.jsp"><img src = "../img/logo.jpg" alt="Logo nase kompanije"></a><small>Manager Hotel Reservation System</small></h1>
+            <h1><a href = "../ManagerPages/AtlantisParadiseBahamasHotelManagerPage.jsp"><img src = "../img/logo.jpg" alt="Logo nase kompanije"></a><small>Manager Hotel Reservation System</small></h1>
           </div>
         </header>
       </div>
