@@ -7,9 +7,20 @@ public class Hotel {
     private int rooms;
     private String typeOfRoom;
     private String typeOfRoom2;
+    private String hotelText;
 
     public Hotel() {
 
+    }
+
+    public Hotel(int id, String hotelName, String hotelLocation, int rooms, String typeOfRoom, String typeOfRoom2, String hotelText) {
+        this.id = id;
+        HotelName = hotelName;
+        HotelLocation = hotelLocation;
+        this.rooms = rooms;
+        this.typeOfRoom = typeOfRoom;
+        this.typeOfRoom2 = typeOfRoom2;
+        this.hotelText = hotelText;
     }
 
     public int getId() {
@@ -58,5 +69,13 @@ public class Hotel {
 
     public void setTypeOfRoom2(String typeOfRoom2) {
         this.typeOfRoom2 = typeOfRoom2;
+    }
+
+    public String getHotelText() {
+        return hotelText;
+    }
+
+    public void setHotelText(String hotelText) {
+        this.hotelText = hotelText;
     }
 }

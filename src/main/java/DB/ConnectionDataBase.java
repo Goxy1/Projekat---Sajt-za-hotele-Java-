@@ -1,8 +1,6 @@
 package DB;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class ConnectionDataBase {
     public static Connection connection;
@@ -23,4 +21,36 @@ public class ConnectionDataBase {
         }
         return connection;
     }
+
+    public String getHotelTextFromDatabase() {
+        String hotelText = "";
+        PreparedStatement statement = null;
+
+        try {
+            // Izvršavanje upita za dobijanje teksta iz baze
+            String query = "SELECT hotelText FROM hoteli WHERE ID = ?";
+            statement = connection.prepareStatement(query);
+            statement.setInt(1, 1);
+            ResultSet resultSet = statement.executeQuery();
+            if (resultSet.next()) {
+                hotelText = resultSet.getString("hotelText");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            // Zatvaranje resursa
+            try {
+                if (statement != null) {
+                    statement.close();
+                }
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return hotelText;
+    }
 }
+

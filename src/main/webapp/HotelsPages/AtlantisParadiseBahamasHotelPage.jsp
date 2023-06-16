@@ -1,3 +1,6 @@
+<%@ page import="DB.Hotel" %>
+<%@ page import="DB.ConnectionDataBase" %>
+
 <%--
   Created by IntelliJ IDEA.
   User: urosg
@@ -57,24 +60,12 @@
     </button>
   </div>
 
-
+<% ConnectionDataBase connection = new ConnectionDataBase();
+    connection.connectToDataBase();
+%>
   <div class="container">
     <h2 class="h2">Atlantis Paradise Bahamas Hotel</h2>
-    <p>This iconic tower’s lobby features The Dig and Ruins Lagoon, a large open-air marine habitat. Located in the Atlantis Paradise Resort and Casino, it offers colorful rooms with a flat-screen TV.<br><br>
-
-      A French balcony with views of the harbor, ocean, or gardens is included in every contemporary Royal Towers Atlantis room. An iPod docking station and minibar are provided. Room service and Wi-Fi are available 24 hours a day.<br><br>
-
-      Paradise Island's Aquaventure Water Park boasts waterslides, 11 landscaped pools, and rock climbing. Dolphin swims at Dolphin Cay and comedy shows at Jokers Wild are also open to guests of Atlantis Royal Towers.<br><br>
-
-      A total of 21 restaurants and 19 bars are part of the Atlantis Paradise Resort including the Nobu with Fine Japanese dining.<br><br>
-
-      The 10,000-square-foot gym offers yoga and cardio classes. Six tennis courts are available, along with racquet rentals and tennis lessons.<br><br>
-
-      Couples particularly like the location — they rated it 8.9 for a two-person trip.<br><br>
-
-
-       The price of the 1 night is 800EURO - The price includes All inclusive, one of the best swimming pools in the world, a room with a beautiful view of the sea and all kinds of activities.</p>
-       With our loyalty discount the price of the 1 night is 700EURO!!!
+    <p><%= connection.getHotelTextFromDatabase() %></p>
   </div>
 
   <div class="container">
@@ -95,7 +86,7 @@
           <label class="check-lbl">Check-out date</label>
           <input type="date"  class="form-control" name="checkOutDate" placeholder="Check-out date" required>
 
-          <label class="AtlantisParadiseLabel">What type of room would you like?We offer single room and double rooms.</label>
+          <label class="AtlantisParadiseLabel">What type of room would you like?</label>
           <input class="AtlantisParadiseInput" type="text" id="typeOfRoom" name="typeOfRoom" required>
 
           <label class="AtlantisParadiseLabel">Enter the name of the hotel to confirm that you are not a bot.</label>

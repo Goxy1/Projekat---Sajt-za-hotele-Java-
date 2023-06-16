@@ -19,22 +19,17 @@
 <div class="container">
   <h3>Rules and job instructions</h3>
   <ul>
-    <li>Rule number 1: Manager can edit 1 hotel only - it can create new hotel room type,delete hotel room type,creating new hotel room,making changes to that new hotel room and being able to delete that new hotel room.Once you add new hotel room,type you need to add pictures and text manually.Below rules is video file that shows you how to do that.</li>
+    <li>Rule number 1: Manager can edit 1 hotel only - it can create new hotel room type,delete hotel room type,creating new hotel room,making changes to that new hotel room and being able to delete that new hotel room.Below rules is video file that shows you how to do that.</li>
     <li>Rule number 2: Don't spread negative energy.</li>
-    <li>Rule number 3: If you are stuck somewhere in your work with hotels room and you can't progress further even with video file below,call someone of your co-workers to help you.</li>
-    <li>Rule number 4: Maintain open and effective communication with the hotel staff.</li>
-    <li>Rule number 5: Ensure the highest level of customer service and satisfaction.</li>
-    <li>Rule number 6: Manage and resolve guest complaints in a professional and timely manner.</li>
-    <li>Rule number 7: Adhere to all applicable laws, regulations, and industry standards.</li>
-    <li>Rule number 8: Maintain the security and confidentiality of guest information and hotel data.</li>
-    <li>Rule number 9: Monitor and optimize hotel operations to maximize revenue and profitability.</li>
-    <li>Rule number 10: Stay updated with industry trends and implement innovative strategies to enhance the hotel's competitiveness.</li>
+    <li>Rule number 3: Maintain open and effective communication with the hotel staff.</li>
+    <li>Rule number 4: Ensure the highest level of customer service and satisfaction.</li>
+    <li>Rule number 5: Manage and resolve guest complaints in a professional and timely manner.</li>
+    <li>Rule number 6: Adhere to all applicable laws, regulations, and industry standards.</li>
+    <li>Rule number 7: Maintain the security and confidentiality of guest information and hotel data.</li>
+    <li>Rule number 8: Monitor and optimize hotel operations to maximize revenue and profitability.</li>
+    <li>Rule number 9: Stay updated with industry trends and implement innovative strategies to enhance the hotel's competitiveness.</li>
   </ul>
 
-  <video controls>
-    <source src="../video/videoMenadzer.mp4" type="video/mp4">
-    Your browser does not support video playback.
-  </video>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
