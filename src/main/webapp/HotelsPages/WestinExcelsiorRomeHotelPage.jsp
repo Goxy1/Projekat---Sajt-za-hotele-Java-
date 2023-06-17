@@ -1,4 +1,4 @@
-<%--
+<%@ page import="DB.ConnectionDataBase" %><%--
   Created by IntelliJ IDEA.
   User: urosg
   Date: 6/4/2023
@@ -56,29 +56,12 @@
   </button>
 </div>
 
-
+<%ConnectionDataBase connection = new ConnectionDataBase();
+  connection.connectToDataBase();
+%>
 <div class="container">
   <h2 class="h2">Westin Excelsior Rome Hotel</h2>
-  <p>The Westin Excelsior, Rome is in fashionable Via Veneto, 500 metres from Spagna Metro Station. It features luxurious decor with antique furniture and crystal chandeliers.<br><br>
-
-    With refined furniture and custom fabrics, the elegant rooms include a flat-screen TV with both satellite and pay-per-view channels. Some overlook Via Veneto. Their marble bathroom offers bathrobe and slippers.<br><br>
-
-    The hotel includes a 300 m² wellness centre with a hot tub, a gym and an indoor swimming pool.<br><br>
-
-    Guests can enjoy drinks and snacks at the stylish lounge bars. Specialising in Mediterranean cuisine, the Doney Restaurant provides a chic indoor setting along Via Veneto.<br><br>
-
-    Surrounded by cafés, shops and restaurants, the Westin Excelsior is a 5-minute walk from Villa Borghese and Piazza Barberini. Public transport links connect it to Rome’s main attractions.<br><br>
-
-    This is our guests' favourite part of Rome, according to independent reviews.<br><br>
-
-    Couples particularly like the location — they rated it 9.1 for a two-person trip.<br><br>
-
-    Hotel chain/brand:<br><br>
-    Westin<br><br>
-
-
-    The price of the 1 night is 900EURO - The price includes All inclusive, one of the best swimming pools in the world, a room with a beautiful view of the sea and all kinds of activities.</p>
-    With our loyalty discount the price of the 1 night is 800EURO!!!
+  <p><%= connection.getHotelTextFromDatabaseWestinExcelsiorRome()%></p>
 </div>
 
 <div class="container">

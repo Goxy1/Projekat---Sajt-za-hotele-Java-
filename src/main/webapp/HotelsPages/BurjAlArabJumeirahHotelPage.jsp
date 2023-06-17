@@ -1,4 +1,4 @@
-<%--
+<%@ page import="DB.ConnectionDataBase" %><%--
   Created by IntelliJ IDEA.
   User: urosg
   Date: 6/3/2023
@@ -56,25 +56,12 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
+<%ConnectionDataBase connection = new ConnectionDataBase();
+  connection.connectToDataBase();
+%>
 <div class="container">
   <h2 class="h2">Burj Al Arab Jumeirah Hotel</h2>
-  <p>Situated on its own island, Burj Al Arab Jumeirah features suites overlooking the sea, 8 signature restaurants and a full-service spa. Guests may arrive at the property by chauffeur-driven fleets of Rolls-Royce's or alternatively by a dedicated helicopter transfer service. The terrace offers two swimming pools, 32 luxury cabanas, a restaurant and a bar.<br><br>
-
-    Featuring floor to ceiling windows with panoramic view of the Arabian Gulf, each suite includes a reactor speaker, complimentary Wi-Fi, and widescreen interactive HD TV. Wireless charger and media hub is also available.<br><br>
-
-    The Sky View Bar is suspended 200 metres above sea level where guests can enjoy afternoon tea and cocktails. Al Muntaha is the Burj Al Arab's signature fine dining restaurant serving contemporary European cuisine.<br><br>
-
-    Talise Spa has both ladies and gentlemen’s relaxation areas feature an aqua retreat. Facilities include separate indoor infinity pools, hot tub and treatment rooms overlooking the Arabian Gulf complement the spa, along with saunas, steam rooms and plunge pools.<br><br>
-
-    It features cabanas, sun loungers, along with views of Burj Al Arab Jumeirah and the Arabian Gulf. The Summersalt Beach Club is exclusive to Jumeirah Al Naseem and Burj Al Arab Jumeirah suite guests. All guests will get access to the Jumeirah Beach Hotel private beach.<br><br>
-
-    Burj Al Arab Jumeirah offers unlimited access to the water sports activities at Wild Wadi Waterpark™, located just a 5-minute walk across the island bridge. Souk Madinat Jumeirah is a 15-minute walk away.<br><br>
-
-    Couples particularly like the location — they rated it 9.5 for a two-person trip.<br><br>
-
-    The price of the 1 night is 1400EURO - The price includes All inclusive, one of the best swimming pools in the world, a room with a beautiful view of the sea and all kinds of activities.</p>
-    With our loyalty discount the price of the 1 night is 1300EURO!!!
+  <p><%= connection.getHotelTextFromDatabaseBurjAlArabJumerirah()%></p>
 </div>
 
 <div class="container">

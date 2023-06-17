@@ -1,4 +1,4 @@
-<%--
+<%@ page import="DB.ConnectionDataBase" %><%--
   Created by IntelliJ IDEA.
   User: urosg
   Date: 6/4/2023
@@ -55,27 +55,13 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
+<%ConnectionDataBase connection = new ConnectionDataBase();
+  connection.connectToDataBase();
+%>
 
 <div class="container">
   <h2 class="h2">The Plaza New York Hotel</h2>
-  <p>Located next to Central Park and 5th Avenue, this internationally renowned Manhattan hotel is a step away from famous shops such as Bergdorf Goodman, Louis Vuitton, Chanel, and Saks Fifth Avenue.<br><br>
-
-    The luxurious and spacious rooms at The Plaza offer the latest technology of in-room iPads and boast modern bathrooms with 24-karat gold platted fixtures and separate rain showers.<br><br>
-
-    The Plaza Hotel offers world class restaurants and bars such as The Palm Court which is one of New York City's finest destinations for Afternoon Tea.<br><br>
-
-    Amenities at The Plaza include the world-class Shops at The Plaza, featuring exclusive boutiques and health and wellness facilities including a Guerlain Spa, Warren-Tricomi Salon, and a gym by La Palestra.<br><br>
-
-    This is our guests' favourite part of New York, according to independent reviews.<br><br>
-
-    Couples particularly like the location — they rated it 9.7 for a two-person trip.<br><br>
-
-    Hotel chain/brand:<br><br>
-    Fairmont Hotels & Resorts<br><br>
-
-    The price of the 1 night is 900EURO - The price includes All inclusive, one of the best swimming pools in the world, a room with a beautiful view of the sea and all kinds of activities.</p>
-    With our loyalty discount the price of the 1 night is 800EURO!!!
+  <p><%= connection.getHotelTextFromDatabasePlazaNewYork()%></p>
 </div>
 
 <div class="container">

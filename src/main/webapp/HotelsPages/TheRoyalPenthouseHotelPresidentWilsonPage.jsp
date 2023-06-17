@@ -1,4 +1,4 @@
-<%--
+<%@ page import="DB.ConnectionDataBase" %><%--
   Created by IntelliJ IDEA.
   User: urosg
   Date: 6/4/2023
@@ -56,33 +56,12 @@
     </button>
 </div>
 
-
+<%ConnectionDataBase connection = new ConnectionDataBase();
+    connection.connectToDataBase();
+%>
 <div class="container">
     <h2 class="h2">The Royal Penthouse – Hotel President Wilson</h2>
-    <p>This elegant 5-star hotel is located on Geneva’s waterfront promenade, offering spectacular views of Lake Geneva, Mont Blanc and the Alps. It features a luxurious spa and an outdoor pool.<br><br>
-
-        All rooms at Hotel President Wilson are air-conditioned and feature state-of-the-art technology, Hermès bathroom amenities, and a flat-screen B&O TV. Free high-speed WiFi (up to 200 MB) is available throughout the Hotel.<br><br>
-
-        Dining options include the seasonal Japanese restaurant Umami, run by the famous chef Michel Roth and open between June and September, the Bayview Restaurant by Michel Roth which was awarded its first Michelin star in 2014 and received 18 out of 20 points at the Gault-Millau guide in 2016, and the Lebanese restaurant Arabesque.<br><br>
-
-        The President Wilson's 2 elegant bars include the Glow bar lounge and the So bar and during summer, you can also enjoy a cocktail at the Pool bar by the heated outdoor swimming pool (open from May to September).<br><br>
-
-        Unique in Switzerland, the exclusive Spa La Mer offers La Mer high-quality treatments, including the popular "Crème". The spa also features a sauna, a hot tub, and a steam bath. A fitness centre equipped with Technogym products is open 24 hours a day and can be used free of charge.<br><br>
-
-        A 5-minute walk away, a small boat is available free of charge to take guests to the shopping area and the Old Town.<br><br>
-
-        Cornavin Train Station is a 5-minute drive from the President Wilson Hotel. A bus stop is right in front. Geneva’s public transport network can be used free of charge by guests. The international organisations and many banks and boutiques are only steps away.<br><br>
-
-        This is our guests' favourite part of Geneva, according to independent reviews.<br><br>
-
-        Couples particularly like the location — they rated it 9.1 for a two-person trip.<br><br>
-
-        Hotel chain/brand:<br><br>
-        Luxury Collection<br><br>
-
-
-        The price of the 1 night is 850EURO - The price includes All inclusive, one of the best swimming pools in the world, a room with a beautiful view of the sea and all kinds of activities.</p>
-        With our loyalty discount the price of the 1 night is 750EURO!!!
+    <p><%= connection.getHotelTextFromDatabasePalmPresidentWilson()%></p>
 </div>
 
 <div class="container">

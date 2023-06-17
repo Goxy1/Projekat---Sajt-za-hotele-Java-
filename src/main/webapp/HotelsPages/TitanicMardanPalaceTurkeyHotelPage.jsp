@@ -1,4 +1,4 @@
-<%--
+<%@ page import="DB.ConnectionDataBase" %><%--
   Created by IntelliJ IDEA.
   User: urosg
   Date: 6/3/2023
@@ -56,23 +56,12 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
+<%ConnectionDataBase connection = new ConnectionDataBase();
+  connection.connectToDataBase();
+%>
 <div class="container">
   <h2 class="h2">Titanic Mardan Palace Turkey Hotel</h2>
-  <p>This resort boasts one of the largest outdoor pools in Europe and 8 à la carte restaurants. Titanic Mardan Palace offers a private beach area and rooms equipped with luxury amenities.<br><br>
-
-    Each room has a balcony with views of Taurus Mountains, Mediterranean Sea or swimming pool. All rooms feature remote controlled air conditioning and lighting.<br><br>
-
-    Separate restaurants are dedicated to international cuisines. The main restaurant serves each meal. The rooftop bar offers views of the resort and the sea.<br><br>
-
-    The luxury spa offers therapies, a state-of-art fitness centre and a meditation room overlooking the indoor pool. The beauty therapy centre provides facial and body care.<br><br>
-
-    The centre of Antalya is just 15 km away and can be reached in just 20 minutes by car. EXPO 2016 Antalya is 17 km from Titanic Mardan Palace.<br><br>
-
-    Couples particularly like the location — they rated it 8.9 for a two-person trip.<br><br>
-
-    The price of the 1 night is 1000EURO - The price includes All inclusive, one of the best swimming pools in the world, a room with a beautiful view of the sea and all kinds of activities.</p>
-    With our loyalty discount the price of the 1 night is 900EURO!!!
+  <p><%= connection.getHotelTextFromDatabaseTitanicMardanPalaceTurkeyHotel()%></p>
 </div>
 
 <div class="container">

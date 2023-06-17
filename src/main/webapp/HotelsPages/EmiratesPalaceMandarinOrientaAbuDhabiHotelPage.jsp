@@ -1,4 +1,4 @@
-<%--
+<%@ page import="DB.ConnectionDataBase" %><%--
   Created by IntelliJ IDEA.
   User: urosg
   Date: 6/3/2023
@@ -57,24 +57,12 @@
   </button>
 </div>
 
+<%ConnectionDataBase connection = new ConnectionDataBase();
+  connection.connectToDataBase();
+%>
 <div class="container">
   <h2 class="h2">Emirates Palace Mandarin Orienta Abu Dhabi Hotel</h2>
-  <p>Located on the shores of the Arabian Gulf, overlooking its own private natural bay, Emirates Palace Mandarin Oriental Abu Dhabi is situated on 1.3 km stretch of private beach. The silver, gold and glass mosaics décor is evocative of Arabia’s rich history of hospitality. This luxury accommodation, with the latest technology and 14 food and beverage outlets to choose from during your stay, offers guests the very best of new and old world charm.<br><br>
-
-    All rooms and suites feature luxurious bedding, and well-appointed furnishings. All rooms have spacious marble bathrooms and come equipped with an iPad mini with integrated room controls, interactive HD TV, a choice of over 150 TV channels, complimentary movies, On Demand services and free high speed WiFi. Every room comes with 24-hour butler service.<br><br>
-
-    The Pavillion features panoramic sea views and à la carte menus or buffets that serve a selection of Arabic mezze, Middle Eastern and international inspired dishes, as well as Emirati signature dishes from Mezlai.<br><br>
-
-    Emirates Palace’s diverse range of the world’s finest cuisine in its 14 opulent restaurants offers meals to tempt every gastronome. Diners may experience exquisite seafood at Sayad served with a magnificent view of the Gulf. Diners may dine as the locals do at Mezlai or simply partake in an international smorgasbord at La Vendôme.<br><br>
-
-    The hotel has 2 expansive swimming pools, and a spa that offers massages, and a full range of lavish body treatments. The Emirates Palace also has a fitness centre and a kids’ club so enjoyable small guests will beg their parents to stay.<br><br>
-
-    Emirates Palace Mandarin Oriental Abu Dhabi is 25-minutes’ drive from Abu Dhabi International Airport and the Abu Dhabi National Exhibition Centre. The Palace is few minutes away from high end shopping malls, numerous restaurants and cultural institutions, and Marina Mall and Heritage Village are a mere seven minutes’ drive away.<br><br>
-
-    Couples particularly like the location — they rated it 9.5 for a two-person trip.<br><br>
-
-    The price of the 1 night is 450EURO - The price includes All inclusive, one of the best swimming pools in the world, a room with a beautiful view of the sea and all kinds of activities.<br><br></p>
-    With our loyalty discount the price of the 1 night is 350EURO!!!
+  <p><%= connection.getHotelTextFromDatabaseEmiratesPalaceMandarinOrientaAbuDhabi()%></p>
 </div>
 
 <div class="container">

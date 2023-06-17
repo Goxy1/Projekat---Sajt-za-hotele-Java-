@@ -1,4 +1,5 @@
-<%--
+<%@ page import="DB.ConnectionDataBase" %>
+<%@ page import="java.sql.Connection" %><%--
   Created by IntelliJ IDEA.
   User: urosg
   Date: 6/4/2023
@@ -56,27 +57,12 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
+<%ConnectionDataBase connection = new ConnectionDataBase();
+  connection.connectToDataBase();
+%>
 <div class="container">
   <h2 class="h2">The Palms Las Vegas Hotel Page</h2>
-  <br>Located 2 km from The Strip, this boutique Las Vegas resort features a one-of-a-kind art program interwoven throughout the property with works by globally famous artists. Guests can visit the 24-hour casino or dine at a variety of on-site restaurants.<br><br>
-
-    Featuring stylish décor, the contemporary guest rooms Palms Casino Resort have a variety of chic amenities. Rooms include flat-screen TVs, fully stocked minibars and more.<br><br>
-
-    Serving dinner, premier steakhouse Scotch 80 Prime features A5 Wagyu beef imported from Kobe, Japan. Offering classic Las Vegas charm, this steakhouse has a dedicated Whisky Program with a focus on rare and vintage marks from top producers in Scotland. Located on the 55th floor in the Ivory Tower, Ghost Bar is an open-air boutique nightclub with panoramic views of Las Vegas. A.Y.C.E. Buffet offers a variety of cuisine for breakfast, lunch and dinner.<br><br>
-
-    The gaming floor at Palms Casino Resort boasts more than 1,100 video poker and slot machines. The VIP Lounge includes a fine art collection.<br><br>
-
-    Guests can relax and rejuvenate at Drift Spa which offers over 20 treatment rooms and an extensive list of services.<br><br>
-
-    The on-site Pearl Concert Theater, a 2500 seat entertainment venue, hosts concerts and events by major international artists and performers.<br><br>
-
-    The Mob Museum is 13 minutes’ drive away from Palms Casino Resort.  McCarran International Airport is 8 km away.<br><br>
-
-    Couples particularly like the location — they rated it 8.1 for a two-person trip.<br><br>
-
-    The price of the 1 night is 300EURO - The price includes All inclusive, one of the best swimming pools in the world, a room with a beautiful view of the sea and all kinds of activities.</p>
-    With our loyalty discount the price of the 1 night is 200EURO!!!
+  <p><%= connection.getHotelTextFromDatabasePalmLasVegas()%></p>
 </div>
 
 <div class="container">

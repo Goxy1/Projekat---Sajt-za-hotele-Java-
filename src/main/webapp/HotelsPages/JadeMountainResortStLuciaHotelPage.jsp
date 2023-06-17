@@ -1,4 +1,4 @@
-<%--
+<%@ page import="DB.ConnectionDataBase" %><%--
   Created by IntelliJ IDEA.
   User: urosg
   Date: 6/4/2023
@@ -56,20 +56,12 @@
   </button>
 </div>
 
-
+<%ConnectionDataBase connection = new ConnectionDataBase();
+  connection.connectToDataBase();
+%>
 <div class="container">
   <h2 class="h2">Jade Mountain Resort St Lucian Hotel</h2>
-  <p>Jade Mountain offers accommodation in Soufrière.<br><br>
-
-    Certain rooms include views of the sea or mountain. Extras include bathrobes and slippers.<br><br>
-
-    The nearest airport is St Lucia Hewanorra Airport, 16 km from the property.<br><br>
-
-    Couples particularly like the location — they rated it 10 for a two-person trip.<br><br>
-
-
-    The price of the 1 night is 2000EURO - The price includes All inclusive, one of the best swimming pools in the world, a room with a beautiful view of the sea and all kinds of activities.</p>
-    With our loyalty discount the price of the 1 night is 1900EURO!!!
+  <p><%= connection.getHotelTextFromDatabaseJadeMountain() %></p>
 </div>
 
 <div class="container">
