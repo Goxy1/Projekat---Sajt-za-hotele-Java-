@@ -9,6 +9,7 @@ public class Hotel {
     private String typeOfRoom2;
     private String hotelText;
 
+
     public Hotel() {
 
     }

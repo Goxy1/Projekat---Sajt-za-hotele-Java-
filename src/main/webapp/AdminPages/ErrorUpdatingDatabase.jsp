@@ -12,8 +12,8 @@
 </head>
 <body>
 <script>
-  alert("Error occurred during updating database.Returning to the show all users page.");
-  window.location.href="../AdminPages/ShowUsersPage.jsp";
+  alert("Error occurred during updating database");
+  window.location.href="../AdminPages/AdminPage.jsp";
 </script>
 </body>
 </html>
