@@ -52,5 +52,252 @@ public class ConnectionDataBase {
         }
         return hotelText;
     }
+    public String getHotelTextFromDatabaseBurjAlArabJumerirah() {
+        String hotelText = "";
+        PreparedStatement statement = null;
+
+        try {
+            // Izvršavanje upita za dobijanje teksta iz baze
+            String query = "SELECT hotelText FROM hoteli WHERE ID = ?";
+            statement = connection.prepareStatement(query);
+            statement.setInt(1, 2);
+            ResultSet resultSet = statement.executeQuery();
+            if (resultSet.next()) {
+                hotelText = resultSet.getString("hotelText");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            // Zatvaranje resursa
+            try {
+                if (statement != null) {
+                    statement.close();
+                }
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return hotelText;
+    }
+
+    public String getHotelTextFromDatabaseEmiratesPalaceMandarinOrientaAbuDhabi() {
+        String hotelText = "";
+        PreparedStatement statement = null;
+
+        try {
+            // Izvršavanje upita za dobijanje teksta iz baze
+            String query = "SELECT hotelText FROM hoteli WHERE ID = ?";
+            statement = connection.prepareStatement(query);
+            statement.setInt(1, 3);
+            ResultSet resultSet = statement.executeQuery();
+            if (resultSet.next()) {
+                hotelText = resultSet.getString("hotelText");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            // Zatvaranje resursa
+            try {
+                if (statement != null) {
+                    statement.close();
+                }
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return hotelText;
+    }
+
+    public String getHotelTextFromDatabaseTitanicMardanPalaceTurkeyHotel() {
+        String hotelText = "";
+        PreparedStatement statement = null;
+
+        try {
+            // Izvršavanje upita za dobijanje teksta iz baze
+            String query = "SELECT hotelText FROM hoteli WHERE ID = ?";
+            statement = connection.prepareStatement(query);
+            statement.setInt(1, 4);
+            ResultSet resultSet = statement.executeQuery();
+            if (resultSet.next()) {
+                hotelText = resultSet.getString("hotelText");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            // Zatvaranje resursa
+            try {
+                if (statement != null) {
+                    statement.close();
+                }
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return hotelText;
+    }
+
+    public String getHotelTextFromDatabasePalmLasVegas() {
+        String hotelText = "";
+        PreparedStatement statement = null;
+
+        try {
+            // Izvršavanje upita za dobijanje teksta iz baze
+            String query = "SELECT hotelText FROM hoteli WHERE ID = ?";
+            statement = connection.prepareStatement(query);
+            statement.setInt(1, 5);
+            ResultSet resultSet = statement.executeQuery();
+            if (resultSet.next()) {
+                hotelText = resultSet.getString("hotelText");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            // Zatvaranje resursa
+            try {
+                if (statement != null) {
+                    statement.close();
+                }
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return hotelText;
+    }
+
+    public String getHotelTextFromDatabasePlazaNewYork() {
+        String hotelText = "";
+        PreparedStatement statement = null;
+
+        try {
+            // Izvršavanje upita za dobijanje teksta iz baze
+            String query = "SELECT hotelText FROM hoteli WHERE ID = ?";
+            statement = connection.prepareStatement(query);
+            statement.setInt(1, 6);
+            ResultSet resultSet = statement.executeQuery();
+            if (resultSet.next()) {
+                hotelText = resultSet.getString("hotelText");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            // Zatvaranje resursa
+            try {
+                if (statement != null) {
+                    statement.close();
+                }
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return hotelText;
+    }
+
+    public String getHotelTextFromDatabaseWestinExcelsiorRome() {
+        String hotelText = "";
+        PreparedStatement statement = null;
+
+        try {
+            // Izvršavanje upita za dobijanje teksta iz baze
+            String query = "SELECT hotelText FROM hoteli WHERE ID = ?";
+            statement = connection.prepareStatement(query);
+            statement.setInt(1, 7);
+            ResultSet resultSet = statement.executeQuery();
+            if (resultSet.next()) {
+                hotelText = resultSet.getString("hotelText");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            // Zatvaranje resursa
+            try {
+                if (statement != null) {
+                    statement.close();
+                }
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return hotelText;
+    }
+
+    public String getHotelTextFromDatabaseJadeMountain() {
+        String hotelText = "";
+        PreparedStatement statement = null;
+
+        try {
+            // Izvršavanje upita za dobijanje teksta iz baze
+            String query = "SELECT hotelText FROM hoteli WHERE ID = ?";
+            statement = connection.prepareStatement(query);
+            statement.setInt(1, 8);
+            ResultSet resultSet = statement.executeQuery();
+            if (resultSet.next()) {
+                hotelText = resultSet.getString("hotelText");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            // Zatvaranje resursa
+            try {
+                if (statement != null) {
+                    statement.close();
+                }
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return hotelText;
+    }
+
+    public String getHotelTextFromDatabasePalmPresidentWilson() {
+        String hotelText = "";
+        PreparedStatement statement = null;
+
+        try {
+            // Izvršavanje upita za dobijanje teksta iz baze
+            String query = "SELECT hotelText FROM hoteli WHERE ID = ?";
+            statement = connection.prepareStatement(query);
+            statement.setInt(1, 9);
+            ResultSet resultSet = statement.executeQuery();
+            if (resultSet.next()) {
+                hotelText = resultSet.getString("hotelText");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            // Zatvaranje resursa
+            try {
+                if (statement != null) {
+                    statement.close();
+                }
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return hotelText;
+    }
 }
 
