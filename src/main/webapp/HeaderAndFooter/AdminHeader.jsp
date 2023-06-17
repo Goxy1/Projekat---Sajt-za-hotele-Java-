@@ -23,10 +23,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="">Hotels</a>
+            <a class="nav-link active" aria-current="page" href="../AdminPages/AdminPage.jsp">Hotels</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Rules</a>
+            <a class="nav-link" aria-current="page" href="../AdminPages/DeleteAHotel.jsp">Delete a Hotel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../AdminPages/CreateAHotel.jsp">Create a Hotel</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../AdminPages/ShowReservations.jsp">Reservations</a>

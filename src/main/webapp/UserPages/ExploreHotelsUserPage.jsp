@@ -1,4 +1,11 @@
-<%--
+<%@ page import="java.sql.Connection" %>
+<%@ page import="DB.ConnectionDataBase" %>
+<%@ page import="DB.Hotel" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.SQLException" %><%--
   Created by IntelliJ IDEA.
   User: urosg
   Date: 5/30/2023
@@ -41,105 +48,50 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-4 custom-col-3" style="margin-top: 3cm;">
-                <div class="card custom-col-3" style="width: 18rem;">
-                    <img src="../img/AtlantisParadiseBahamasHotel.jpeg" class="card-img-top" alt="AtlantisParadiseBahamasHotel">
-                    <div class="card-body">
-                        <h5 class="card-title">Atlantis Paradise Bahamas Hotel</h5>
-                        <p class="card-text">This iconic tower’s lobby features The Dig and Ruins Lagoon.</p>
-                        <a href="../HotelsPages/AtlantisParadiseBahamasHotelPage.jsp" class="btn btn-primary">Explore this hotel!</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4 custom-col-3" style="margin-top: 3cm;">
-                <div class="card custom-col-3" style="width: 18rem;">
-                    <img src="../img/BurjAlArabJumeirahHotel.jpg" class="card-img-top" alt="BurjAlArabJumeirahHotel">
-                    <div class="card-body">
-                        <h5 class="card-title">Burj Al Arab Jumeirah Hotel</h5>
-                        <p class="card-text">Situated on its own island, Burj Al Arab Jumeirah features suites overlooking the sea.</p>
-                        <a href="../HotelsPages/BurjAlArabJumeirahHotelPage.jsp" class="btn btn-primary">Explore this hotel!</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4 custom-col-3" style="margin-top: 3cm;">
-                <div class="card custom-col-3" style="width: 18rem;">
-                    <img src="../img/EmiratesPalaceAbuDhabiHotel.jpg" class="card-img-top" alt="EmiratesPalaceMandarinOrientaAbuDhabiHotel">
-                    <div class="card-body">
-                        <h5 class="card-title">Emirates Palace Mandarin Orienta Abu Dhabi Hotel</h5>
-                        <p class="card-text">Located on the shores of the Arabian Gulf.</p>
-                        <a href="../HotelsPages/EmiratesPalaceMandarinOrientaAbuDhabiHotelPage.jsp" class="btn btn-primary">Explore this hotel!</a>
-                    </div>
-                </div>
-            </div>
-    </div>
+            <%
+                Connection connection = null;
+                connection = ConnectionDataBase.connectToDataBase(); // Pozivanje funkcije za uspostavljanje konekcije iz vaše klase
+            %>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-4 custom-col-3" style="margin-top: 3cm;">
-                <div class="card custom-col-3" style="width: 18rem;">
-                    <img src="../img/MardanPalaceTurkeyHotel.jpg" class="card-img-top" alt="MardanPalaceTurkeyHotel">
-                    <div class="card-body">
-                        <h5 class="card-title">Titanic Mardan Palace Turkey Hotel</h5>
-                        <p class="card-text">Located on a private beach, Titanic Mardan Palace - All Inclusive is in Lara.</p>
-                        <a href="../HotelsPages/TitanicMardanPalaceTurkeyHotelPage.jsp" class="btn btn-primary">Explore this hotel!</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4 custom-col-3" style="margin-top: 3cm;">
-                <div class="card custom-col-3" style="width: 18rem;">
-                    <img src="../img/ThePalmsLasVegasHotel.jpg" class="card-img-top" alt="ThePalmsLasVegasHotel">
-                    <div class="card-body">
-                        <h5 class="card-title">The Palms Las Vegas Hotel</h5>
-                        <p class="card-text">Palms Place puts you just a 5-minute drive from The Linq and The Cosmopolitan Casino.</p>
-                        <a href="../HotelsPages/ThePalmsLasVegasHotelPage.jsp" class="btn btn-primary">Explore this hotel!</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4 custom-col-3" style="margin-top: 3cm;">
-                <div class="card custom-col-3" style="width: 18rem;">
-                    <img src="../img/ThePlazaNewYorkHotell.jpg" class="card-img-top" alt="ThePlazaNewYorkHotel">
-                    <div class="card-body">
-                        <h5 class="card-title">The Plaza New York Hotel</h5>
-                        <p class="card-text">The Plaza Hotel is located in Manhattan, a neighborhood in New York.Services are all-inclusive.</p>
-                        <a href="../HotelsPages/ThePlazaNewYorkHotelPage.jsp" class="btn btn-primary">Explore this hotel!</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+            <%
+                String selectQuery = "SELECT * FROM hoteli"; // Promijenite ovo na odgovarajući upit za dohvat podataka iz baze
 
-    <div class="container">
-        <div class="row">
-            <div class="col-4 custom-col-3" style="margin-top: 2cm;">
+                try (Statement statement = connection.createStatement();
+                     ResultSet resultSet = statement.executeQuery(selectQuery)) {
+                    while (resultSet.next()) {
+                        String imageUrl = resultSet.getString("putanjaSlike");
+                        String hotelName = resultSet.getString("HotelName");
+                        String hotelDescription = resultSet.getString("hotelDescription");
+                        String hotelPage = resultSet.getString("buttonRedirectionUser");
+            %>
+
+            <div class="col-4 custom-col-3" style="margin-top: 3cm;">
                 <div class="card custom-col-3" style="width: 18rem;">
-                    <img src="../img/WestinExcelsiorRomeHotel.jpg" class="card-img-top" alt="WestinExcelsiorRomeHotel">
+                    <img src="<%= imageUrl %>" class="card-img-top" alt="<%= hotelName %>">
                     <div class="card-body">
-                        <h5 class="card-title">Westin Excelsior Rome Hotel</h5>
-                        <p class="card-text">The Westin Excelsior, Rome is in fashionable Via Veneto.</p>
-                        <a href="../HotelsPages/WestinExcelsiorRomeHotelPage.jsp" class="btn btn-primary">Explore this hotel!</a>
+                        <h5 class="card-title"><%= hotelName %></h5>
+                        <p class="card-text"><%= hotelDescription %></p>
+                        <a href="<%= hotelPage%>" class="btn btn-primary">Explore this hotel!</a>
                     </div>
                 </div>
             </div>
-            <div class="col-4 custom-col-3" style="margin-top: 2cm;">
-                <div class="card custom-col-3" style="width: 18rem;">
-                    <img src="../img/JadeMountainResortStLucia.jpg" class="card-img-top" alt="JadeMountainResortStLucia">
-                    <div class="card-body">
-                        <h5 class="card-title">Jade Mountain Resort St Lucia Hotel</h5>
-                        <p class="card-text">At Jade Mountain Resort, you'll have a lot of fun.</p>
-                        <a href="../HotelsPages/JadeMountainResortStLuciaHotelPage.jsp" class="btn btn-primary">Explore this hotel!</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4 custom-col-3" style="margin-top: 2cm;">
-                <div class="card custom-col-3" style="width: 18rem;">
-                    <img src="../img/TheRoyalPenthouseHotelPresidentWilson.jpg" class="card-img-top" alt="TheRoyalPenthouse–HotelPresidentWilson–">
-                    <div class="card-body">
-                        <h5 class="card-title">Hotel President Wilson,a Luxury Collection Hotel</h5>
-                        <p class="card-text">This elegant 5-star hotel is located on Geneva’s waterfront promenade.</p>
-                        <a href="../HotelsPages/TheRoyalPenthouseHotelPresidentWilsonPage.jsp" class="btn btn-primary">Explore this hotel!</a>
-                    </div>
-                </div>
-            </div>
+
+            <%
+                    }
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            %>
+
+            <%
+                if (connection != null) {
+                    try {
+                        connection.close();
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+                }
+            %>
         </div>
     </div>
 
