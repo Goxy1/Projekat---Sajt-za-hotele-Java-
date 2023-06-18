@@ -163,6 +163,10 @@
         <textarea class="AtlantisParadiseInput" name="hotelText" rows="4" cols="50"></textarea>
         <button type="submit" class="AtlantisParadiseButton">Update Hotel Text</button>
     </form>
+    <form action="../DeleteHotelAdminServlet" method="POST" class="AtlantisParadiseForm">
+        <input type="hidden" name="hotelId" value="<%= hotel.getId() %>">
+        <button type="submit" class="AtlantisParadiseButton">Delete the hotel!</button>
+    </form>
     <%
             }
         } catch (Exception e) {
