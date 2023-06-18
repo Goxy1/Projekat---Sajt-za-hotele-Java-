@@ -50,11 +50,11 @@
         <div class="row">
             <%
                 Connection connection = null;
-                connection = ConnectionDataBase.connectToDataBase(); // Pozivanje funkcije za uspostavljanje konekcije iz vaše klase
+                connection = ConnectionDataBase.connectToDataBase(); // Calling the function so we can connect to dataBase
             %>
 
             <%
-                String selectQuery = "SELECT * FROM hoteli"; // Promijenite ovo na odgovarajući upit za dohvat podataka iz baze
+                String selectQuery = "SELECT * FROM hoteli";
 
                 try (Statement statement = connection.createStatement();
                      ResultSet resultSet = statement.executeQuery(selectQuery)) {
@@ -62,7 +62,7 @@
                         String imageUrl = resultSet.getString("putanjaSlike");
                         String hotelName = resultSet.getString("HotelName");
                         String hotelDescription = resultSet.getString("hotelDescription");
-                        String hotelPage = resultSet.getString("buttonRedirectionUser");
+                        String hotelId = resultSet.getString("ID");
             %>
 
             <div class="col-4 custom-col-3" style="margin-top: 3cm;">
@@ -71,7 +71,8 @@
                     <div class="card-body">
                         <h5 class="card-title"><%= hotelName %></h5>
                         <p class="card-text"><%= hotelDescription %></p>
-                        <a href="<%= hotelPage%>" class="btn btn-primary">Explore this hotel!</a>
+                        <a href="../HotelsPages/DetailedInformationsHotelPage.jsp?hotelId=<%=hotelId%>&hotelName=<%=hotelName%>"  class="btn btn-primary">Explore this hotel!</a>
+
                     </div>
                 </div>
             </div>
