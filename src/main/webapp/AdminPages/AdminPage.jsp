@@ -49,7 +49,6 @@
       String imageUrl = resultSet.getString("putanjaSlike");
       String hotelName = resultSet.getString("HotelName");
       String hotelDescription = resultSet.getString("hotelDescription");
-      String hotelPage = resultSet.getString("buttonRedirection");
 %>
 
     <div class="col-4 custom-col-3" style="margin-top: 3cm;">
@@ -58,7 +57,8 @@
         <div class="card-body">
           <h5 class="card-title"><%= hotelName %></h5>
           <p class="card-text"><%= hotelDescription %></p>
-          <a href="<%= hotelPage%>" class="btn btn-primary">Edit this hotel!</a>
+          <a href="../AdminPages/EditHotelsAdmin.jsp?hotelId=<%= resultSet.getString("ID") %>" class="btn btn-primary">Edit this hotel!</a>
+          <input type="hidden" id="hotelId" value="<%= resultSet.getInt("ID") %>">
         </div>
       </div>
     </div>
