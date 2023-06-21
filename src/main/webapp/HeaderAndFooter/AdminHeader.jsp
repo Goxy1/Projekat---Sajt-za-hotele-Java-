@@ -26,9 +26,6 @@
             <a class="nav-link active" aria-current="page" href="../AdminPages/AdminPage.jsp">Hotels</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="../AdminPages/DeleteAHotel.jsp">Delete a Hotel</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" aria-current="page" href="../AdminPages/CreateAHotel.jsp">Create a Hotel</a>
           </li>
           <li class="nav-item">

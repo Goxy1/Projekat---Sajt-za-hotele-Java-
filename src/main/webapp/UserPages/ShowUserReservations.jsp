@@ -44,7 +44,7 @@
     </tr>
     <% } %>
 </table><br><br>
-<form action="CancelReservationServlet" method="POST">
+<form action="../CancelReservationServlet" method="POST">
     <label>Reservation ID:</label>
     <input type="text" name="ReservationID" placeholder="Enter your reservation ID" required><br><br/>
     <input type="Submit" value="Cancel reservation">

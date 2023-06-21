@@ -27,15 +27,15 @@ public class CancelReservationServlet extends HttpServlet {
         {
             if(deleteReservation(reservationID))
             {
-                response.sendRedirect("/UserPages/UserReservations.jsp");
+                response.sendRedirect("../UserPages/SuccessDeleteReservation.jsp");
             }
             else
             {
-                response.sendRedirect("/UserPages/UserReservations.jsp");
+                response.sendRedirect("/UserPages/InvalidIDReservation.jsp");
             }
         }
         else {
-            response.sendRedirect("/UserPages/UserReservations.jsp");
+            response.sendRedirect("../UserPages/InvalidIDReservation.jsp");
         }
     }
     private boolean deleteReservation(String reservationID)

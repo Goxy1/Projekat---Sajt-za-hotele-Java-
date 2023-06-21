@@ -11,8 +11,7 @@
   Date: 5/30/2023
   Time: 11:55 AM
   To change this template use File | Settings | File Templates.
-  Za rezervaciju treba napraviti input polje gde se pise email pa se sa emailom hvataju sve
-  rezervacije koje su pod tim mejlom.
+
 
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
