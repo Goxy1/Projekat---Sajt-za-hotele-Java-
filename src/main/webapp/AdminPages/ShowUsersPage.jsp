@@ -75,13 +75,13 @@
   <br>
   <form action="../AdminPages/UpdateUser.jsp" method="POST">
     <label>Which user do you want to edit?Enter their ID:</label><br><br>
-    <input type="text" name="IDUser"><br><br>
+    <input type="text" name="IDUser" required><br><br>
     <input type="submit" value="Submit"><br>
   </form>
   <br><br>
   <form action="../DeleteUserServlet" method="POST">
     <label>Which user do you want to delete?Enter their ID:</label>
-    <input type="text" name="userID"><br><br>
+    <input type="text" name="userID" required><br><br>
     <input type="submit" value="Submit"><br>
   </form>
 </div>

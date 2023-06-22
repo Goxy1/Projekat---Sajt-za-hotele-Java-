@@ -131,27 +131,27 @@
     %>
     <form action="../AtlantisAddNumberOfRoomsServlet" method="POST" class="AtlantisParadiseForm">
       <label class="AtlantisParadiseLabel">How many rooms do you want to add?</label>
-      <input class="AtlantisParadiseInput" type="text" name="numberOfRooms">
+      <input class="AtlantisParadiseInput" type="text" name="numberOfRooms" required>
       <button type="submit" class="AtlantisParadiseButton">Add rooms!</button>
     </form>
     <form action="../AtlantisRemoveNumberOfRoomsServlet" method="POST" class="AtlantisParadiseForm">
       <label class="AtlantisParadiseLabel">How many rooms do you want to remove?</label>
-      <input class="AtlantisParadiseInput" type="text" name="RemoveNumberOfRooms">
+      <input class="AtlantisParadiseInput" type="text" name="RemoveNumberOfRooms" required>
       <button type="submit" class="AtlantisParadiseButton">Remove rooms!</button>
     </form>
     <form action="../AtlantisAddTypeOfRoomFirstSlotServlet" method="POST" class="AtlantisParadiseForm">
       <label class="AtlantisParadiseLabel" >What type of room do you want do add?(1st slot)</label>
-      <input class="AtlantisParadiseInput" type="text" name="AddTypeOfRoom">
+      <input class="AtlantisParadiseInput" type="text" name="AddTypeOfRoom" required>
       <button type="submit" class="AtlantisParadiseButton">Add new type of the room</button>
     </form>
     <form action="../AtlantisAddTypeOfRoomServlet" method="POST" class="AtlantisParadiseForm">
       <label class="AtlantisParadiseLabel" >What type of room do you want do add?(2nd slot)</label>
-      <input class="AtlantisParadiseInput" type="text" name="AddTypeOfRoom2">
+      <input class="AtlantisParadiseInput" type="text" name="AddTypeOfRoom2" required>
       <button type="submit" class="AtlantisParadiseButton">Add new type of the room</button>
     </form>
     <form action="../UpdateHotelTextServlet" method="POST" class="AtlantisParadiseForm">
       <label class="AtlantisParadiseLabel">Hotel Text</label>
-      <textarea class="AtlantisParadiseInput" name="hotelText" rows="4" cols="50"></textarea>
+      <textarea class="AtlantisParadiseInput" name="hotelText" rows="4" cols="50" required></textarea>
       <button type="submit" class="AtlantisParadiseButton">Update Hotel Text</button>
     </form>
   </div>
