@@ -43,7 +43,7 @@ public class UpdateNumberRoomsAdminServlet extends HttpServlet {
         {
             e.printStackTrace();
         }finally {
-            // Zatvori resurse baze podataka u finally bloku
+            // Closing resources database in finally block
             try {
                 if (preparedStatement != null) {
                     preparedStatement.close();

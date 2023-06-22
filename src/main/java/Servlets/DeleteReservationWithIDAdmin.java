@@ -39,18 +39,18 @@ public class DeleteReservationWithIDAdmin extends HttpServlet {
 
             // Checking if the reservation is successfully deleted
             if (rowsAffected > 0) {
-                // Redirekcija na stranicu sa porukom o uspehu
+                // Redirection the the page with a message of success
                 response.sendRedirect("../AdminPages/SuccessfullyDeletedReservation.jsp");
             } else {
-                // Redirekcija na stranicu sa porukom o grešci
+                // Redirection the the page with a message of error
                 response.sendRedirect("../ManagerPages/ErrorUpdatingDatabase.jsp");
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            // Redirekcija na stranicu sa porukom o grešci
+            // Redirection the the page with a message of error
             response.sendRedirect("errorPage.jsp");
         } finally {
-            // Zatvaranje konekcije
+            // Closing resources
             if (connection != null) {
                 try {
                     connection.close();

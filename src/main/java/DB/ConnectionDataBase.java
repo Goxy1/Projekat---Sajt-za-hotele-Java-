@@ -27,7 +27,7 @@ public class ConnectionDataBase {
         PreparedStatement statement = null;
 
         try {
-            // Izvršavanje upita za dobijanje teksta iz baze
+            // Doing a query for getting a hotel text from database
             String query = "SELECT hotelText FROM hoteli WHERE ID = ?";
             statement = connection.prepareStatement(query);
             statement.setInt(1, 1);
@@ -38,7 +38,7 @@ public class ConnectionDataBase {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            // Zatvaranje resursa
+            // Closing resources
             try {
                 if (statement != null) {
                     statement.close();
@@ -57,7 +57,7 @@ public class ConnectionDataBase {
         PreparedStatement statement = null;
 
         try {
-            // Izvršavanje upita za dobijanje teksta iz baze
+            //
             String query = "SELECT hotelText FROM hoteli WHERE ID = ?";
             statement = connection.prepareStatement(query);
             statement.setInt(1, 2);
@@ -68,7 +68,7 @@ public class ConnectionDataBase {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            // Zatvaranje resursa
+
             try {
                 if (statement != null) {
                     statement.close();
@@ -88,7 +88,7 @@ public class ConnectionDataBase {
         PreparedStatement statement = null;
 
         try {
-            // Izvršavanje upita za dobijanje teksta iz baze
+
             String query = "SELECT hotelText FROM hoteli WHERE ID = ?";
             statement = connection.prepareStatement(query);
             statement.setInt(1, 3);
@@ -99,7 +99,7 @@ public class ConnectionDataBase {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            // Zatvaranje resursa
+
             try {
                 if (statement != null) {
                     statement.close();
@@ -119,7 +119,7 @@ public class ConnectionDataBase {
         PreparedStatement statement = null;
 
         try {
-            // Izvršavanje upita za dobijanje teksta iz baze
+
             String query = "SELECT hotelText FROM hoteli WHERE ID = ?";
             statement = connection.prepareStatement(query);
             statement.setInt(1, 4);
@@ -130,7 +130,7 @@ public class ConnectionDataBase {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            // Zatvaranje resursa
+
             try {
                 if (statement != null) {
                     statement.close();
@@ -150,7 +150,7 @@ public class ConnectionDataBase {
         PreparedStatement statement = null;
 
         try {
-            // Izvršavanje upita za dobijanje teksta iz baze
+
             String query = "SELECT hotelText FROM hoteli WHERE ID = ?";
             statement = connection.prepareStatement(query);
             statement.setInt(1, 5);
@@ -161,7 +161,7 @@ public class ConnectionDataBase {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            // Zatvaranje resursa
+
             try {
                 if (statement != null) {
                     statement.close();
@@ -181,7 +181,7 @@ public class ConnectionDataBase {
         PreparedStatement statement = null;
 
         try {
-            // Izvršavanje upita za dobijanje teksta iz baze
+
             String query = "SELECT hotelText FROM hoteli WHERE ID = ?";
             statement = connection.prepareStatement(query);
             statement.setInt(1, 6);
@@ -192,7 +192,7 @@ public class ConnectionDataBase {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            // Zatvaranje resursa
+
             try {
                 if (statement != null) {
                     statement.close();
@@ -212,7 +212,7 @@ public class ConnectionDataBase {
         PreparedStatement statement = null;
 
         try {
-            // Izvršavanje upita za dobijanje teksta iz baze
+
             String query = "SELECT hotelText FROM hoteli WHERE ID = ?";
             statement = connection.prepareStatement(query);
             statement.setInt(1, 7);
@@ -223,7 +223,7 @@ public class ConnectionDataBase {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            // Zatvaranje resursa
+
             try {
                 if (statement != null) {
                     statement.close();
@@ -243,7 +243,7 @@ public class ConnectionDataBase {
         PreparedStatement statement = null;
 
         try {
-            // Izvršavanje upita za dobijanje teksta iz baze
+
             String query = "SELECT hotelText FROM hoteli WHERE ID = ?";
             statement = connection.prepareStatement(query);
             statement.setInt(1, 8);
@@ -254,7 +254,7 @@ public class ConnectionDataBase {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            // Zatvaranje resursa
+
             try {
                 if (statement != null) {
                     statement.close();
@@ -274,7 +274,7 @@ public class ConnectionDataBase {
         PreparedStatement statement = null;
 
         try {
-            // Izvršavanje upita za dobijanje teksta iz baze
+
             String query = "SELECT hotelText FROM hoteli WHERE ID = ?";
             statement = connection.prepareStatement(query);
             statement.setInt(1, 9);
@@ -285,7 +285,7 @@ public class ConnectionDataBase {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            // Zatvaranje resursa
+
             try {
                 if (statement != null) {
                     statement.close();

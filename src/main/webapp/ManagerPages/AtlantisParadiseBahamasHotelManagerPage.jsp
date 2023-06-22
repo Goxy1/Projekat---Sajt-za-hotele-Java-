@@ -69,7 +69,7 @@
         connection = ConnectionDataBase.connectToDataBase();
         String query = "SELECT * FROM hoteli WHERE ID = ?";
         preparedStatement = connection.prepareStatement(query);
-        preparedStatement.setInt(1, 1); // Change the value 1 with the appropriate ID
+        preparedStatement.setInt(1, 1);
         resultSet = preparedStatement.executeQuery();
 
         if (resultSet.next()) {
